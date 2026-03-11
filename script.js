@@ -24,41 +24,41 @@ const story = [
     {
         chapter: 1,
         speaker: "James Marcus",
-        bg: "images/mpscene0.jpg",
+        bg: "images/flashback.jpg",
         sprite: "sprites/JamesMarcus.jpg",  
         spriteVisible: true,
         text: "As the co-founder of Umbrella, I couldn't help but notice how you two excelled at the Umbrella Executive Training Center."
     },
     {
         speaker: "James Marcus",
-        bg: "images/mpscene0.jpg",
+        bg: "images/flashback.jpg",
         text: "The entire class was lackluster apart from you two. As they say, 'Everyone else is so much chaff!'"
     },
     {
         speaker: "James Marcus",
-        bg: "images/mpscene0.jpg",
+        bg: "images/flashback.jpg",
         text: "I look forward to working with you two at the prestigious Arklay Laboratory."
     },
     {
-        speaker: "Wesker",
+        speaker: "You",
         bg: "images/marcusdesk.jpg",
         spriteVisible: false,
         text: "Here we are. The real reason Birkin and I are senior researchers at Umbrella."
     },
     {
-        speaker: "Wesker",
+        speaker: "You",
         bg: "images/marcusdesk.jpg",
         sprite: "assets/research.jpg",  
         spriteVisible: true,
         text: "James Marcus's research. He wouldn't suspect his star pupils..."
     },
     {
-        speaker: "Wesker",
+        speaker: "You",
         bg: "images/marcusdesk.jpg",
         text: "Damn fool."
     },
     {
-        speaker: "Wesker",
+        speaker: "You",
         bg: "images/marcusdesk.jpg",
         hint: "Hint: The choice you make influence your endings, but you cannot see how.",
         text: "Should I steal Marcus's research? It's right there..."
@@ -68,7 +68,8 @@ const story = [
         options: [
             {
                 text: "Yes, it would benefit the T-virus research.",
-                effect: () => { influencePoints++; console.log("Influence:", influencePoints); }
+                effect: () => { influencePoints++; console.log("Influence:", influencePoints);},
+                spriteVisible: false,
             },
             {
                 text: "No.",
@@ -77,19 +78,18 @@ const story = [
         ]
     },
     {
-        speaker: "Wesker",
+        speaker: "You",
         bg: "images/marcusdesk.jpg",
-        spriteVisible: false,
         text: "Umbrella is damn corrupt. Especially Spencer."
     },
     {
-        speaker: "Wesker",
+        speaker: "You",
         bg: "images/marcusdesk.jpg",
         extra: "Note: Oswell E. Spencer, the co-founder of Umbrella, hired Wesker and Birkin on behalf of them being spies. He is paranoid to say the least…",
         text: "Can’t believe he would do that to his own colleague.."
     },
     {
-        speaker: "Wesker",
+        speaker: "You",
         bg: "images/marcusdesk.jpg",
         text: "...Either way, the future of Umbrella lies in our hands now."
     },
@@ -97,9 +97,32 @@ const story = [
         speaker: "",
         bg: "images/marcusdesk.jpg",
         text: "End of chapter 1."
-    }
+    },
 
     // Chapter 2
+    {
+        chapter: 2,
+        speaker: "William Birkin",
+        bg: "images/umbrelladay.jpg",
+        sprite: "sprites/WilliamBirkin1.jpg",  
+        spriteVisible: true,
+        text: "Good mythical morning! You heard what Umbrella suggested, right?"
+    },
+    {
+        speaker: "You",
+        bg: "images/umbrelladay.jpg",
+        text: "No. What else does he want to pile on us?"
+    },
+    {
+        speaker: "William Birkin",
+        bg: "images/umbrelladay.jpg",
+        text: "He suggested that we use the ebola sample we received from the U.S. government…"
+    },
+    {
+        speaker: "William Birkin",
+        bg: "images/umbrelladay.jpg",
+        text: "Alongside the research you.. “Acquired” from Marcus yesterday. This should be good!"
+    },
 ];
 
 
